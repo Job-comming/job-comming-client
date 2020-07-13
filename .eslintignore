@@ -1,0 +1,8 @@
+node_modules
+package.json
+public
+.github
+
+# Built files
+build
+.next
