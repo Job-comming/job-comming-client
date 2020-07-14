@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "DOTENV_CONFIG_PATH=./.env node -r dotenv/config $(which next) -p 3000",
     "build": "next build",
-    "start": "next start",
+    "start": "pm2-runtime -i max server.js",
     "ts-check": "tsc --noEmit",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet",
     "lint:fix": "yarn lint --fix",
@@ -21,6 +21,7 @@
     "dotenv": "^8.2.0",
     "lodash": "^4.17.19",
     "next": "9.4.4",
+    "pm2": "^4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "useragent": "^2.3.0"
