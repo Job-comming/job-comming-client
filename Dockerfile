@@ -1,11 +1,10 @@
 FROM node:12-alpine
-RUN apk add --no-cache git make gcc g++ python3
-
-EXPOSE 80
-
-ENV NODE_ENV=production
-
 WORKDIR /app
+COPY package*.json yarn.lock ./
 COPY . .
-RUN yarn install --production --frozen-lockfile
-CMD yarn start
+RUN yarn --production --frozen-lockfile
+RUN yarn build
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]

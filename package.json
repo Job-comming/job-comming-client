@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "DOTENV_CONFIG_PATH=./.env node -r dotenv/config $(which next) -p 3000",
     "build": "next build",
-    "start": "pm2-runtime -i max server.js",
+    "start": "node server.js",
     "ts-check": "tsc --noEmit",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet",
     "lint:fix": "yarn lint --fix",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
-    "@types/node": "^14.0.22",
+    "@types/node": "^14.0.23",
     "@types/react": "^16.9.43",
     "@types/useragent": "^2.1.1",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
