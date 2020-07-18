@@ -9,6 +9,9 @@ const palette = createPalette({
   primary: {
     main: '#4FCD99',
   },
+  secondary: {
+    main: 'rgba(0, 0, 0, .4)',
+  },
 })
 
 interface GenerateThemeProps {

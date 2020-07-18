@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 import { Rating } from '@material-ui/lab'
-import { Button } from '@material-ui/core'
+import { Button, Theme } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import Header from 'components/Header'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles<Theme>((theme) => ({
   profileHeader: {
     display: 'flex',
     height: '100%',
@@ -30,13 +30,40 @@ const useStyles = makeStyles({
   },
 
   mentoringInfo: {
-    padding: 30,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    paddingLeft: '53px',
+    fontWeight: 'bold',
+    color: '#000',
+
+    '& p': {
+      margin: '4px 0',
+    },
   },
-  mentoAndMentee: {},
-  depositGuide: {},
-  depositArea: {},
-  deposit: {},
-})
+  mentoAndMentee: {
+    fontSize: '12px',
+    lineHeight: '21px',
+
+    '& span': {
+      color: `${theme.palette.primary.main}`,
+    },
+  },
+  depositGuide: {
+    fontSize: '14px',
+    lineHeight: '20px',
+  },
+  depositArea: {
+    display: 'flex',
+  },
+  deposit: {
+    fontSize: '32px',
+    lineHeight: '46px',
+  },
+  chargeButton: {
+    marginLeft: '24px',
+  },
+}))
 
 const ProfileHeader: FC = () => {
   const classes = useStyles()
@@ -61,7 +88,11 @@ const ProfileHeader: FC = () => {
           <p className={classes.depositGuide}>보유한 디파짓</p>
           <div className={classes.depositArea}>
             <p className={classes.deposit}>2,123,130,000원</p>
-            <Button variant="contained" color="primary">
+            <Button
+              className={classes.chargeButton}
+              variant="contained"
+              color="primary"
+            >
               충전
             </Button>
           </div>
