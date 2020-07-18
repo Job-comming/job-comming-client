@@ -52,17 +52,6 @@ const MainLayout: FC = ({ children }) => {
         </div>
         <div className={classes.content}>{children}</div>
       </div>
-      {/* <Grid container className={classes.main}>
-        <Grid item>
-          <div className={classes.menu}>
-            <Menu />
-          </div>
-          <Notification />
-        </Grid>
-        <Grid item className={classes.content}>
-          {children}
-        </Grid>
-      </Grid> */}
     </div>
   )
 }

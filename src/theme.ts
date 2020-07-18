@@ -61,6 +61,17 @@ const generateTheme = ({ ssrMatchMedia }: GenerateThemeProps) =>
           },
         },
       },
+      MuiCard: {
+        root: {
+          border: '1px solid #CED4DA',
+          borderRadius: '4px',
+        },
+      },
+      MuiCardActions: {
+        root: {
+          justifyContent: 'flex-end',
+        },
+      },
       MuiButton: {
         outlined: {
           boxShadow: 'none',

@@ -8,13 +8,12 @@ const useStyles = makeStyles({
   title: {
     display: 'flex',
     alignItems: 'center',
-    fontStyle: 'normal',
     fontWeight: 'bold',
-    fontSize: '14px',
+    fontSize: '12px',
     lineHeight: '21px',
     color: '#000000',
     opacity: '0.5',
-    marginBottom: '12px',
+    paddingBottom: '10px',
 
     '&:after': {
       content: "''",

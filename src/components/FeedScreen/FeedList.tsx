@@ -1,53 +1,31 @@
 import React, { FC } from 'react'
-import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import clsx from 'clsx'
-import Header from 'components/HeadFeedList'
-
+import FeedItem from './FeedItem'
 
 const useStyles = makeStyles({
-    
-common: {
-padding: '16px',
+  headerRoot: {
+    height: '178px',
+    padding: '16px',
   },
-  name: {
-    fontFamily: 'Noto Sans KR',
-    fontStyle: 'normal',
+  newFeed: {
     fontWeight: 'bold',
-    fontSize: '14px',
-    lineHeight: '20px',
+    fontSize: '12px',
+    lineHeight: '21px',
     color: '#000000',
-  },
-  content: {
-    fontFamily: 'Noto Sans KR',
-    fontStyle: 'normal',
-    fontWeight: 'normal',
-    fontSize: '16px',
-    lineHeight: '23px',
-    color: '#000000',
-  },
-  
-  buttonGroup: {
-    textAlign: 'right',
+    opacity: '0.5',
+    paddingBottom: '10px',
   },
 })
 
 const FeedList: FC = () => {
-    const classes = useStyles()
+  const classes = useStyles()
   return (
-    <Header>
-      <p className={clsx(classes.common, classes.name)}>
-      김보민
-      </p>
-      <p className={clsx(classes.common, classes.content)}>
-       풀스택 개발 실전 경험 쌓고 싶습니다!! 멘토님 구해요!! 
-      </p>
-      <div className={clsx(classes.common, classes.buttonGroup)}>
-       <Button variant="outlined" color="primary">
-           프로필 보기
-        </Button>
-      </div>
-    </Header>
+    <>
+      <p className={classes.newFeed}>NEW 피드!</p>
+      {Array.from(Array(10).keys()).map((i) => (
+        <FeedItem key={i} />
+      ))}
+    </>
   )
 }
 
