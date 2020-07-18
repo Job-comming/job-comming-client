@@ -1,13 +1,8 @@
 import { NextPage } from 'next'
-import MainLayout from 'components/MainLayout'
-import FeedList from 'components/FeedList'
+import FeedScreen from 'components/FeedScreen'
 
 const FeedPage: NextPage = () => {
-  return (
-    <MainLayout>
-      <FeedList />
-    </MainLayout>
-  )
+  return <FeedScreen />
 }
 
 export default FeedPage

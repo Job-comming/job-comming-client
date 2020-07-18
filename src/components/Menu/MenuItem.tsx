@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import Link from 'next/link'
 import { Theme } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
@@ -57,4 +57,4 @@ const MenuItem: FC<MenuItemProps> = ({ name, pathname, selected }) => {
   )
 }
 
-export default MenuItem
+export default memo(MenuItem)

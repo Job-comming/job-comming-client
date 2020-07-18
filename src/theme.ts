@@ -7,7 +7,7 @@ const palette = createPalette({
     default: '#35383D',
   },
   primary: {
-    main: '#88FFCE',
+    main: '#4FCD99',
   },
 })
 
@@ -56,6 +56,15 @@ const generateTheme = ({ ssrMatchMedia }: GenerateThemeProps) =>
           img: {
             maxWidth: '100%',
           },
+        },
+      },
+      MuiButton: {
+        contained: {
+          boxShadow: 'none',
+          fontWeight: 'bold',
+        },
+        containedPrimary: {
+          color: '#fff',
         },
       },
     },
