@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { EllipseCheckbox } from 'components/common/checkbox'
+import FeedItem from 'components/FeedScreen/FeedItem'
 
 const useStyles = makeStyles({
   root: {},
@@ -41,7 +42,9 @@ const ProfileMain: FC = () => {
           Logout
         </Button>
       </div>
-      profile feed list
+      {Array.from(Array(10).keys()).map((i) => (
+        <FeedItem key={i} authorName={`박혜원${i}`} level="주니어" />
+      ))}
     </div>
   )
 }
