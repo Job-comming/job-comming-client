@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import MainLayout from 'components/MainLayout'
-import FeedList from 'components/FeedList'
 import FeedHeader from './FeedHeader'
+import FeedList from './FeedList'
 
 const useStyles = makeStyles({
   feedList: {
