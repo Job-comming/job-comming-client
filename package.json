@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "PORT=3000 node ./server.js",
+    "dev": "node ./server.js",
     "build": "next build",
     "start": "node server.js",
     "ts-check": "tsc --noEmit",
