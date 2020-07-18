@@ -17,24 +17,24 @@ const palette = createPalette({
 
 const typography = createTypography(palette, {
   h1: {
-    fontSize: '1.25rem',
+    fontSize: '1.25rem', // 20px
     fontWeight: 'bold',
-    lineHeight: '1.45em',
+    lineHeight: '1.45em', // 29px
   },
   h2: {
-    fontSize: '1rem',
+    fontSize: '1rem', // 16px
     fontWeight: 'bold',
-    lineHeight: '1.45em',
+    lineHeight: '1.45em', // 23px
   },
   h3: {
-    fontSize: '0.875rem',
+    fontSize: '0.875rem', // 14px
     fontWeight: 'bold',
-    lineHeight: '1.4291em',
+    lineHeight: '1.4291em', // 20px
   },
   h4: {
-    fontSize: '0.75rem',
+    fontSize: '0.75rem', // 12px
     fontWeight: 'bold',
-    lineHeight: '1.75em',
+    lineHeight: '1.75em', // 21px
   },
   fontFamily: ['Noto Sans KR', 'sans-serif'].join(','),
 })
