@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Rating } from '@material-ui/lab'
-import { Button, Theme } from '@material-ui/core'
+import { Button, Theme, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import Header from 'components/Header'
 
@@ -19,9 +19,6 @@ const useStyles = makeStyles<Theme>((theme) => ({
     backgroundColor: 'rgba(206, 212, 218, 0.1)',
   },
   label: {
-    fontWeight: 'bold',
-    fontSize: '14px',
-    lineHeight: '20px',
     color: '#000000',
     marginBottom: '16px',
   },
@@ -42,16 +39,9 @@ const useStyles = makeStyles<Theme>((theme) => ({
     },
   },
   mentoAndMentee: {
-    fontSize: '12px',
-    lineHeight: '21px',
-
     '& span': {
       color: `${theme.palette.primary.main}`,
     },
-  },
-  depositGuide: {
-    fontSize: '14px',
-    lineHeight: '20px',
   },
   depositArea: {
     display: 'flex',
@@ -71,7 +61,9 @@ const ProfileHeader: FC = () => {
     <Header>
       <div className={classes.profileHeader}>
         <div className={classes.myRating}>
-          <p className={classes.label}>내 별점</p>
+          <Typography className={classes.label} variant="h3" component="p">
+            내 별점
+          </Typography>
           <Rating
             className={classes.starRating}
             name="my-rating"
@@ -79,13 +71,17 @@ const ProfileHeader: FC = () => {
             size="large"
             readOnly
           />
-          <p>평점 3/5</p>
+          <Typography variant="h3" component="p">
+            평점 3/5
+          </Typography>
         </div>
         <div className={classes.mentoringInfo}>
-          <p className={classes.mentoAndMentee}>
+          <Typography className={classes.mentoAndMentee} variant="h4" component="p">
             나의 멘티 <span>2</span> / 멘토 <span>1</span>
-          </p>
-          <p className={classes.depositGuide}>보유한 디파짓</p>
+          </Typography>
+          <Typography variant="h3" component="p">
+            보유한 디파짓
+          </Typography>
           <div className={classes.depositArea}>
             <p className={classes.deposit}>2,123,130,000원</p>
             <Button

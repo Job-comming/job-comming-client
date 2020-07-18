@@ -11,7 +11,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles({
   root: {
     padding: '8px',
-    marginBottom: '4px',
+    marginBottom: '6px',
     '&:last-child': {
       marginBottom: 0,
     },
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     fontSize: '16px',
     lineHeight: '23px',
     padding: '12px 0',
-    marginBottom: '12px',
+    marginBottom: '10px',
   },
   button: {
     padding: '8px 12px',
@@ -38,7 +38,7 @@ const FeedItem: FC = () => {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-        <Typography className={classes.title} variant="h1" component="h1">
+        <Typography className={classes.title} variant="h3" component="h3">
           머리다!!!!!!!!!
         </Typography>
         <Typography className={classes.content} component="p">

@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import NotificationList from './NotificationList'
 
@@ -8,9 +9,6 @@ const useStyles = makeStyles({
   title: {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: 'bold',
-    fontSize: '12px',
-    lineHeight: '21px',
     color: '#000000',
     opacity: '0.5',
     paddingBottom: '10px',
@@ -30,7 +28,9 @@ const Notification: FC = () => {
 
   return (
     <div className={classes.root}>
-      <p className={classes.title}>알림!</p>
+      <Typography className={classes.title} variant="h4" component="h4">
+        알림!
+      </Typography>
       <NotificationList notifications={[]} />
     </div>
   )

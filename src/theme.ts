@@ -1,6 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 import createPalette from '@material-ui/core/styles/createPalette'
 import { MuiMediaQueryList } from '@material-ui/core'
+import createTypography from '@material-ui/core/styles/createTypography'
 
 const palette = createPalette({
   background: {
@@ -14,6 +15,30 @@ const palette = createPalette({
   },
 })
 
+const typography = createTypography(palette, {
+  h1: {
+    fontSize: '1.25rem',
+    fontWeight: 'bold',
+    lineHeight: '1.45em',
+  },
+  h2: {
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    lineHeight: '1.45em',
+  },
+  h3: {
+    fontSize: '0.875rem',
+    fontWeight: 'bold',
+    lineHeight: '1.4291em',
+  },
+  h4: {
+    fontSize: '0.75rem',
+    fontWeight: 'bold',
+    lineHeight: '1.75em',
+  },
+  fontFamily: ['Noto Sans KR', 'sans-serif'].join(','),
+})
+
 interface GenerateThemeProps {
   ssrMatchMedia(query: string): MuiMediaQueryList
 }
@@ -23,10 +48,8 @@ const generateTheme = ({ ssrMatchMedia }: GenerateThemeProps) =>
     props: {
       MuiUseMediaQuery: { ssrMatchMedia },
     },
-    typography: {
-      fontFamily: ['Noto Sans KR', 'sans-serif'].join(','),
-    },
     palette,
+    typography,
     overrides: {
       MuiCssBaseline: {
         '@global': {

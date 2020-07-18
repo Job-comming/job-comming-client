@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
@@ -11,11 +12,6 @@ const useStyles = makeStyles({
   },
 
   guide: {
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
-    fontWeight: 'bold',
-    fontSize: '12px',
-    lineHeight: '21px',
     color: '#000000',
     opacity: '0.5',
   },
@@ -30,7 +26,9 @@ const NotificationList: FC<NotificationListProps> = ({ notifications }) => {
 
   return (
     <div className={classes.root}>
-      <p className={classes.guide}>내 멘토/멘티 신청내역을 알려드릴게요.</p>
+      <Typography className={classes.guide} variant="h4" component="p">
+        내 멘토/멘티 신청내역을 알려드릴게요.
+      </Typography>
     </div>
   )
 }

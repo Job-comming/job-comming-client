@@ -20,9 +20,6 @@ const useStyles = makeStyles({
     padding: '16px',
   },
   guide: {
-    fontWeight: 'bold',
-    fontSize: '16px',
-    lineHeight: '23px',
     color: '#000000',
   },
   example: {
@@ -43,8 +40,8 @@ const FeedHeader: FC = () => {
       <CardContent className={classes.content}>
         <Typography
           className={clsx(classes.common, classes.guide)}
-          variant="h1"
-          component="h1"
+          variant="h2"
+          component="h2"
         >
           멘티를 모집하거나, 유용한 정보를 공유해보세요!
         </Typography>
