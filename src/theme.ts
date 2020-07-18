@@ -110,6 +110,16 @@ const generateTheme = ({ ssrMatchMedia }: GenerateThemeProps) =>
         containedPrimary: {
           color: '#fff',
         },
+        sizeSmall: {
+          fontSize: '16px',
+          lineHeight: '23px',
+          padding: '8px 12px',
+        },
+        sizeLarge: {
+          fontSize: '20px',
+          lineHeight: '29px',
+          padding: '9px 16px',
+        },
       },
     },
   })

@@ -23,7 +23,7 @@ const FeedList: FC = () => {
         NEW 피드!
       </Typography>
       {Array.from(Array(10).keys()).map((i) => (
-        <FeedItem key={i} />
+        <FeedItem key={i} authorName={`박혜원${i}`} level="주니어" />
       ))}
     </>
   )

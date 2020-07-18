@@ -7,46 +7,48 @@ import {
   Button,
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import { EllipseBadge } from 'components/common/badge'
 
 const useStyles = makeStyles({
   root: {
-    padding: '8px',
+    padding: '4px',
     marginBottom: '6px',
     '&:last-child': {
       marginBottom: 0,
     },
   },
-  title: {
+  author: {
     marginBottom: '25px',
-    fontSize: '14px',
-    fontWeight: 'bold',
-    lineHeight: '20px',
+  },
+  authorName: {
+    marginRight: '12px',
   },
   content: {
-    fontSize: '16px',
-    lineHeight: '23px',
     padding: '12px 0',
     marginBottom: '10px',
   },
-  button: {
-    padding: '8px 12px',
-  },
 })
 
-const FeedItem: FC = () => {
+interface FeedItemProps {
+  authorName: string
+  level: string
+}
+
+const FeedItem: FC<FeedItemProps> = ({ authorName, level }) => {
   const classes = useStyles()
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-        <Typography className={classes.title} variant="h3" component="h3">
-          머리다!!!!!!!!!
+        <Typography className={classes.author} variant="h3" component="h3">
+          <span className={classes.authorName}>{authorName}</span>
+          <EllipseBadge active={true}>{level}</EllipseBadge>
         </Typography>
-        <Typography className={classes.content} component="p">
-          몸통이다!!!!!!!!!
+        <Typography className={classes.content} variant="h2" component="p">
+          고수입니다 ^ㅎ^
         </Typography>
       </CardContent>
       <CardActions>
-        <Button className={classes.button} variant="outlined" color="primary">
+        <Button variant="outlined" color="primary" size="small">
           프로필 보기
         </Button>
       </CardActions>
