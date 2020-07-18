@@ -1,17 +1,12 @@
-import Head from 'next/head'
-import HelloWorld from 'components/HelloWorld'
+import { useEffect } from 'react'
+import Router from 'next/router'
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const IndexPage = () => {
+  useEffect(() => {
+    Router.push('/feed')
+  }, [])
 
-      <main>
-        <HelloWorld />
-      </main>
-    </div>
-  )
+  return null
 }
+
+export default IndexPage

@@ -15,15 +15,20 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@types/css-mediaquery": "^0.1.0",
     "@types/lodash": "^4.14.157",
+    "@types/ua-parser-js": "^0.7.33",
     "axios": "^0.19.2",
     "clsx": "^1.1.1",
+    "css-mediaquery": "^0.1.2",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.19",
     "next": "9.4.4",
+    "next-seo": "^4.7.3",
     "pm2": "^4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "ua-parser-js": "^0.7.21",
     "useragent": "^2.3.0"
   },
   "devDependencies": {
