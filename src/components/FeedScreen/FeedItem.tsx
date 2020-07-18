@@ -32,9 +32,10 @@ const useStyles = makeStyles({
 interface FeedItemProps {
   authorName: string
   level: string
+  isOwner: boolean
 }
 
-const FeedItem: FC<FeedItemProps> = ({ authorName, level }) => {
+const FeedItem: FC<FeedItemProps> = ({ authorName, level, isOwner }) => {
   const classes = useStyles()
   return (
     <Card className={classes.root} variant="outlined">
@@ -48,9 +49,15 @@ const FeedItem: FC<FeedItemProps> = ({ authorName, level }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="outlined" color="primary" size="small">
-          프로필 보기
-        </Button>
+        {isOwner ? (
+          <Button variant="contained" color="primary" size="small">
+            피드 수정!
+          </Button>
+        ) : (
+          <Button variant="outlined" color="primary" size="small">
+            프로필 보기
+          </Button>
+        )}
       </CardActions>
     </Card>
   )

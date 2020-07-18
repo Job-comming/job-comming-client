@@ -14,17 +14,6 @@ interface JobCommingAppProps {
 }
 
 class JobCommingApp extends App<JobCommingAppProps> {
-  // public static async getInitialProps({ ctx, Component }: AppContext): Promise<any> {
-  //   let pageProps: any = {}
-  //   if (Component.getInitialProps) {
-  //     pageProps = await Component.getInitialProps(ctx)
-  //   }
-
-  //   return {
-  //     pageProps,
-  //   }
-  // }
-
   public componentDidMount(): void {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
@@ -65,7 +54,7 @@ class JobCommingApp extends App<JobCommingAppProps> {
   }
 }
 
-JobCommingApp.getInitialProps = async (appContext) => {
+JobCommingApp.getInitialProps = async (appContext: AppContext) => {
   let appProps: any = {}
   if (App.getInitialProps) {
     appProps = await App.getInitialProps(appContext)
