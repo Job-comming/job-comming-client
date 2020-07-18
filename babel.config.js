@@ -30,6 +30,15 @@ module.exports = {
     [
       'babel-plugin-import',
       {
+        libraryName: '@material-ui/labs',
+        libraryDirectory: '',
+        camel2DashComponentName: false,
+      },
+      'labs',
+    ],
+    [
+      'babel-plugin-import',
+      {
         libraryName: 'lodash',
         libraryDirectory: '',
         camel2DashComponentName: false,
