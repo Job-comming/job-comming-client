@@ -23,6 +23,10 @@ const useStyles = makeStyles<Theme>((theme) => ({
     padding: '58px 52px',
     backgroundColor: '#FFFFFF',
   },
+
+  menu: {
+    marginBottom: '74px',
+  },
 }))
 
 const MainLayout: FC = ({ children }) => {
@@ -30,11 +34,13 @@ const MainLayout: FC = ({ children }) => {
   return (
     <div className={classes.root}>
       <div className={classes.header}>
-        <img src="/static/logo/logo.svg" />
+        <img src="/static/logo/logo-small.svg" />
       </div>
       <Grid container className={classes.main}>
         <Grid item>
-          <Menu />
+          <div className={classes.menu}>
+            <Menu />
+          </div>
           <Notification />
         </Grid>
         <Grid item>{children}</Grid>

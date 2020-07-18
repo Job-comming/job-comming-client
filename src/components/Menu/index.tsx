@@ -5,7 +5,6 @@ import MenuItem from './MenuItem'
 
 const useStyles = makeStyles({
   root: {
-    width: '200px',
     height: '150px',
     display: 'flex',
     flexDirection: 'column',

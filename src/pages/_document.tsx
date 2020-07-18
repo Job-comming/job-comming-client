@@ -53,7 +53,7 @@ export default class MyDocument extends Document<DocumentProps> {
             href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean"
             rel="stylesheet"
           />
-          <link rel="icon" href="../static/favicon.ico" />
+          <link rel="icon" href="../static/logo/logo.png" />
         </Head>
         <body>
           <Main />
