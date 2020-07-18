@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import { Theme, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import Menu from './Menu'
+import Notification from './Notification'
 
 const useStyles = makeStyles<Theme>((theme) => ({
   root: {
@@ -34,6 +35,7 @@ const MainLayout: FC = ({ children }) => {
       <Grid container className={classes.main}>
         <Grid item>
           <Menu />
+          <Notification />
         </Grid>
         <Grid item>{children}</Grid>
       </Grid>

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "DOTENV_CONFIG_PATH=./.env node -r dotenv/config $(which next) -p 3000",
+    "dev": "PORT=3000 node ./server.js",
     "build": "next build",
     "start": "node server.js",
     "ts-check": "tsc --noEmit",
@@ -22,6 +22,7 @@
     "clsx": "^1.1.1",
     "css-mediaquery": "^0.1.2",
     "dotenv": "^8.2.0",
+    "dotenv-webpack": "^2.0.0",
     "lodash": "^4.17.19",
     "next": "9.4.4",
     "next-seo": "^4.7.3",
@@ -48,6 +49,7 @@
     "eslint-plugin-react-hooks": "^4.0.7",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "next-compose-plugins": "^2.2.0",
     "prettier": "^2.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6"
