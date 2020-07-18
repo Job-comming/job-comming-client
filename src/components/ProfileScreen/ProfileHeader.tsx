@@ -85,6 +85,7 @@ const ProfileHeader: FC = () => {
             className={classes.chargeButton}
             variant="contained"
             color="primary"
+            size="large"
           >
             충전
           </Button>

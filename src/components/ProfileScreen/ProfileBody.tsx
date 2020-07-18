@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
 })
 
-const ProfileMain: FC = () => {
+const ProfileBody: FC = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -49,4 +49,4 @@ const ProfileMain: FC = () => {
   )
 }
 
-export default ProfileMain
+export default ProfileBody

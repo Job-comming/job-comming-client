@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import MainLayout from 'components/MainLayout'
 import ProfileHeader from './ProfileHeader'
-import ProfileMain from './ProfileMain'
+import ProfileBody from './ProfileBody'
 
 const useStyles = makeStyles({
   profileMain: {
@@ -16,7 +16,7 @@ const ProfileScreen: FC = () => {
     <MainLayout>
       <ProfileHeader />
       <div className={classes.profileMain}>
-        <ProfileMain />
+        <ProfileBody />
       </div>
     </MainLayout>
   )
