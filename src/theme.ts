@@ -59,6 +59,13 @@ const generateTheme = ({ ssrMatchMedia }: GenerateThemeProps) =>
         },
       },
       MuiButton: {
+        outlined: {
+          boxShadow: 'none',
+          fontWeight: 'bold',
+        },
+        outlinedPrimary: {
+          color: palette.primary.main,
+        },
         contained: {
           boxShadow: 'none',
           fontWeight: 'bold',

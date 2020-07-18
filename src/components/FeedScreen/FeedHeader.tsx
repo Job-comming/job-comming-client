@@ -39,7 +39,7 @@ const FeedHeader: FC = () => {
       </p>
       <div className={clsx(classes.common, classes.buttonGroup)}>
         <Button variant="contained" color="primary">
-          hello
+          피드 등록!
         </Button>
       </div>
     </Header>

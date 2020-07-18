@@ -1,12 +1,8 @@
 import { NextPage } from 'next'
-import MainLayout from 'components/MainLayout'
+import ProfileScreen from 'components/ProfileScreen'
 
 const ProfilePage: NextPage = () => {
-  return (
-    <MainLayout>
-      <div>profile</div>
-    </MainLayout>
-  )
+  return <ProfileScreen />
 }
 
 export default ProfilePage
