@@ -12,12 +12,13 @@ const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
     fontStyle: 'normal',
     fontWeight: 'bold',
     fontSize: '20px',
-    lineHeight: '29px',
     cursor: 'pointer',
+    lineHeight: '40px',
   },
 
   underline: {
     position: 'relative',
+    padding: '5px 0',
     '&:after': {
       content: "''",
       position: 'absolute',
