@@ -11,7 +11,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     borderRadius: '15px',
     padding: '5px 10px',
     fontWeight: 'bold',
-    fontSize: '12px',
+    fontSize: '0.75rem',
     lineHeight: '17px',
     color: `${theme.palette.primary.main}`,
     textAlign: 'center',

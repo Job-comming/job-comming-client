@@ -45,7 +45,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     display: 'flex',
   },
   deposit: {
-    fontSize: '32px',
+    fontSize: '2rem',
     lineHeight: '46px',
   },
   chargeButton: {

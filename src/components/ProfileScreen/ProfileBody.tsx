@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   },
   name: {
     fontWeight: 'bold',
-    fontSize: '20px',
+    fontSize: '1.25rem',
     lineHeight: '29px',
     color: '#000000',
     marginRight: '16px',

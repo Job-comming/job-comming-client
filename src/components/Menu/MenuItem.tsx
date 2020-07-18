@@ -11,7 +11,7 @@ const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
   root: {
     fontStyle: 'normal',
     fontWeight: 'bold',
-    fontSize: '20px',
+    fontSize: '1.25rem',
     cursor: 'pointer',
     lineHeight: '40px',
   },
