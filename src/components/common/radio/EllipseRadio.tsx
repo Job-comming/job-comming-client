@@ -1,5 +1,5 @@
 import React, { RefForwardingComponent, forwardRef } from 'react'
-import { Checkbox, CheckboxProps } from '@material-ui/core'
+import { Radio, RadioProps } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { EllipseBadge } from '../badge'
 
@@ -12,19 +12,20 @@ const useStyles = makeStyles({
   },
 })
 
-interface EllipseCheckboxProps extends CheckboxProps {
+interface EllipseRadioProps extends RadioProps {
   text: string
 }
 
-const EllipseCheckbox: RefForwardingComponent<
-  HTMLInputElement,
-  EllipseCheckboxProps
-> = (props, ref) => {
+const EllipseRadio: RefForwardingComponent<HTMLInputElement, EllipseRadioProps> = (
+  props,
+  ref,
+) => {
   const { text, ...other } = props
   const classes = useStyles()
   return (
-    <Checkbox
+    <Radio
       inputRef={ref}
+      disableRipple
       className={classes.root}
       color="default"
       icon={<EllipseBadge active={false}>{text}</EllipseBadge>}
@@ -34,4 +35,4 @@ const EllipseCheckbox: RefForwardingComponent<
   )
 }
 
-export default forwardRef(EllipseCheckbox)
+export default forwardRef(EllipseRadio)

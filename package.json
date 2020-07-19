@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node ./server.js",
+    "dev": "DOTENV_CONFIG_PATH=./.env node -r dotenv/config $(which next) -p 3000",
     "build": "next build",
-    "start": "node server.js",
+    "start": "node ./server.js",
     "ts-check": "tsc --noEmit",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet",
     "lint:fix": "yarn lint --fix",
@@ -30,6 +30,8 @@
     "pm2": "^4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-hook-form": "^6.0.7",
+    "swr": "^0.2.3",
     "ua-parser-js": "^0.7.21",
     "useragent": "^2.3.0"
   },

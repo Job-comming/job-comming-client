@@ -1,8 +1,13 @@
 import { NextPage } from 'next'
-import LoginScreen from 'components/LoginScreen'
+import IntroLayout from 'components/IntroLayout'
+import SignUpScreen from 'components/SignUpScreen'
 
 const LoginPage: NextPage = () => {
-  return <LoginScreen />
+  return (
+    <IntroLayout>
+      <SignUpScreen />
+    </IntroLayout>
+  )
 }
 
 export default LoginPage

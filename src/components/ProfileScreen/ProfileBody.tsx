@@ -30,10 +30,10 @@ const ProfileBody: FC = () => {
       <div className={classes.aboutMe}>
         <div>
           <span className={classes.name}>나는 박혜원</span>
-          <EllipseCheckbox name="주니어" disabled />
-          <EllipseCheckbox name="# fullstack" disabled />
-          <EllipseCheckbox name="# fullstack" disabled />
-          <EllipseCheckbox name="# fullstack" disabled />
+          <EllipseCheckbox text="주니어" disabled />
+          <EllipseCheckbox text="#fullstack" disabled />
+          <EllipseCheckbox text="#fullstack" disabled />
+          <EllipseCheckbox text="#fullstack" disabled />
           <Button className={classes.button} color="secondary">
             edit
           </Button>

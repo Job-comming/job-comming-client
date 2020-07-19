@@ -13,14 +13,14 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '26px',
+    padding: '10px',
   },
   subtitle: {
     fontSize: '1.5rem',
     lineHeight: '48px',
     fontWeight: 300,
     color: '#FFFFFF',
-    paddingBottom: '15px',
+    paddingBottom: '10px',
 
     '& span': {
       fontWeight: 'bold',
@@ -31,7 +31,7 @@ const useStyles = makeStyles({
     lineHeight: '48px',
     fontWeight: 900,
     color: '#88FFCE',
-    paddingTop: '20px',
+    paddingTop: '15px',
   },
 })
 
