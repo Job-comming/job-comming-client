@@ -7,16 +7,16 @@ import { Typography } from '@material-ui/core'
 const useStyles = makeStyles({
   bar: {
     background: '#FFFFFF',
-    width: '447px',
-    height: '48px',
+    width: '717px',
+    height: '80px',
   },
 
   string: {
-    padding: '13px',
+    padding: '30px',
     fontFamily: 'Roboto',
     fontStyle: 'normal',
     fontWeight: 'bold',
-    fontSize: '12px',
+    fontSize: '14px',
     lineHeight: '21px',
     color: '#000000',
     float: 'left',
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   },
 
   countTitle: {
-    paddingLeft: '155px',
+    paddingLeft: '350px',
   },
 
   countNumber: {

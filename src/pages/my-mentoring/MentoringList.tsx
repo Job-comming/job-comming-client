@@ -6,9 +6,9 @@ import clsx from 'clsx'
 const useStyles = makeStyles({
   common: {
     marginTop: '15px',
-    marginLeft: '20px',
-    width: '400px',
-    height: '52px',
+    marginLeft: '100px',
+    width: '500px',
+    height: '60px',
     background: '#FFFFFF',
     boxSizing: 'border-box',
     borderRadius: '4px',
@@ -38,10 +38,9 @@ const useStyles = makeStyles({
     fontWeight: 'normal',
     fontSize: '12px',
     lineHeight: '20px',
-    paddingRight: '17px',
     color: '#000000',
     opacity: '0.5',
-    paddingLeft: '230px',
+    paddingLeft: '300px',
   },
 })
 
