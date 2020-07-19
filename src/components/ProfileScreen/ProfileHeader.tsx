@@ -64,12 +64,12 @@ const ProfileHeader: FC = () => {
         <Rating
           className={classes.starRating}
           name="my-rating"
-          value={2}
+          value={4}
           size="large"
           readOnly
         />
         <Typography variant="h3" component="p">
-          평점 3/5
+          평점 4/5
         </Typography>
       </CardContent>
       <CardContent className={classes.mentoringInfo}>
@@ -80,7 +80,7 @@ const ProfileHeader: FC = () => {
           보유한 디파짓
         </Typography>
         <div className={classes.depositArea}>
-          <p className={classes.deposit}>2,123,130,000원</p>
+          <p className={classes.deposit}>123,130원</p>
           <Button
             className={classes.chargeButton}
             variant="contained"

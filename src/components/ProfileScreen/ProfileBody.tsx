@@ -42,9 +42,34 @@ const ProfileBody: FC = () => {
           Logout
         </Button>
       </div>
-      {Array.from(Array(10).keys()).map((i) => (
-        <FeedItem key={i} authorName={`박혜원${i}`} level="주니어" isOwner={true} />
-      ))}
+      <FeedItem
+        key={1}
+        authorName={`박혜원`}
+        content="도와주세요~~"
+        level="주니어"
+        isOwner={true}
+      />
+      <FeedItem
+        key={2}
+        authorName={`박혜원`}
+        content="도와드릴까요~"
+        level="주니어"
+        isOwner={true}
+      />
+      <FeedItem
+        key={3}
+        authorName={`박혜원`}
+        content="도와주세요~~"
+        level="주니어"
+        isOwner={true}
+      />
+      <FeedItem
+        key={4}
+        authorName={`박혜원`}
+        content="도와드릴까요~"
+        level="주니어"
+        isOwner={true}
+      />
     </div>
   )
 }

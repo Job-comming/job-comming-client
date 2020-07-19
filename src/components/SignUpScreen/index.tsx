@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import Link from 'next/link'
 import {
   Card,
   CardContent,
@@ -175,9 +176,11 @@ const SignUpScreen: FC = () => {
                 ref={register()}
               />
             </FormControl>
-            <Button className={classes.submit} type="submit" variant="outlined">
-              시작하기
-            </Button>
+            <Link href="/">
+              <Button className={classes.submit} type="submit" variant="outlined">
+                시작하기
+              </Button>
+            </Link>
           </form>
         </CardContent>
       </Card>

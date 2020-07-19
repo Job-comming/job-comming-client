@@ -31,11 +31,12 @@ const useStyles = makeStyles({
 
 interface FeedItemProps {
   authorName: string
+  content: string
   level: string
   isOwner: boolean
 }
 
-const FeedItem: FC<FeedItemProps> = ({ authorName, level, isOwner }) => {
+const FeedItem: FC<FeedItemProps> = ({ authorName, level, isOwner, content }) => {
   const classes = useStyles()
   return (
     <Card className={classes.root} variant="outlined">
@@ -45,7 +46,7 @@ const FeedItem: FC<FeedItemProps> = ({ authorName, level, isOwner }) => {
           <EllipseBadge active={true}>{level}</EllipseBadge>
         </Typography>
         <Typography className={classes.content} variant="h2" component="p">
-          고수입니다 ^ㅎ^
+          {content}
         </Typography>
       </CardContent>
       <CardActions>
