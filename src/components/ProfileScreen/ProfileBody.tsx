@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginBottom: 10,
   },
   name: {
     fontWeight: 'bold',
